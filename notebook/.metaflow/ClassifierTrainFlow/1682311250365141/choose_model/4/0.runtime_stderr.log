@@ -1,0 +1,30 @@
+[MFLOG|0|2023-04-24T04:40:53.790812Z|runtime|badcbd42-4068-45a7-9ef7-dbb5fc1db95a]<flow ClassifierTrainFlow step choose_model> failed:
+[MFLOG|0|2023-04-24T04:40:53.796650Z|runtime|27d66aa1-0cca-424d-9feb-ddb5fa63787c]    Internal error
+[MFLOG|0|2023-04-24T04:40:53.797481Z|runtime|8e8eece8-415b-4ecb-b480-bf4e684914de]Traceback (most recent call last):
+[MFLOG|0|2023-04-24T04:40:53.922753Z|runtime|b7602f3a-8158-4cd7-88b1-71b9d0043ad7]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-04-24T04:40:53.923019Z|runtime|d1253f0d-81ae-47d4-8f3d-8cde3a69babc]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-04-24T04:40:53.923078Z|runtime|b58bc30b-cbe9-4c8a-995d-0c5252098e76]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-04-24T04:40:53.923125Z|runtime|f8748de9-7779-435d-ab45-3c7eceff3846]    return self.main(args, kwargs)
+[MFLOG|0|2023-04-24T04:40:53.923169Z|runtime|12c39e6e-ebe4-4586-b497-7c29854ce9ad]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-04-24T04:40:53.923212Z|runtime|caff6200-d820-4c48-871f-1a43db386e75]    rv = self.invoke(ctx)
+[MFLOG|0|2023-04-24T04:40:53.923253Z|runtime|0f38a2ab-6773-43c1-8274-bba777bd36f5]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-04-24T04:40:53.923293Z|runtime|479d009f-bf0e-4cf1-a868-e57c9614ff0d]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-04-24T04:40:53.923333Z|runtime|71187594-575d-4df9-b0ec-f5a976d83e96]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-04-24T04:40:53.923374Z|runtime|27d1e359-28e9-4ece-9571-04c87b444ec7]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-04-24T04:40:53.923412Z|runtime|93fa3417-4802-4edd-b3f1-e93b08bd00ab]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-04-24T04:40:53.923450Z|runtime|07d8f7a8-2b55-42d0-87b0-b3dcec73050f]    return callback(args, kwargs)
+[MFLOG|0|2023-04-24T04:40:53.923488Z|runtime|11144606-3d45-4c9a-80fc-81c54dff49b8]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-04-24T04:40:53.923526Z|runtime|689e2d0d-bcd4-4e38-aae7-c292afaeb330]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-04-24T04:40:53.923564Z|runtime|db98af7c-f53d-4497-91ad-3f0611481c8a]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-04-24T04:40:53.923602Z|runtime|1f4d552c-3ff5-4c53-93d2-4e0284aecd09]    task.run_step(
+[MFLOG|0|2023-04-24T04:40:53.923641Z|runtime|5e65eed8-ab43-4618-9302-806f8e99b7f3]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/task.py", line 584, in run_step
+[MFLOG|0|2023-04-24T04:40:53.923680Z|runtime|8e14f09d-c663-4b9b-a573-f5746119fa21]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2023-04-24T04:40:53.923719Z|runtime|8f08e8d0-4ec6-4275-b6f3-f61fca5f7655]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2023-04-24T04:40:53.923759Z|runtime|b245e7b0-60e4-4cd6-8f75-0d82ee8dd862]    step_function(input_obj)
+[MFLOG|0|2023-04-24T04:40:53.923798Z|runtime|b4a94a25-f788-40c9-a467-da80a8c9ff4e]  File "/Users/eviljimmy/Desktop/USF/2023_Spring/MLOps/Labs/mlops/notebook/python_file/classifier_train.py", line 38, in choose_model
+[MFLOG|0|2023-04-24T04:40:53.923835Z|runtime|d7b5ef82-f1a4-4694-bf05-b2bcd88f3eec]    print(self.reuslts)
+[MFLOG|0|2023-04-24T04:40:53.923873Z|runtime|bfc207ed-a615-44c4-94a0-09221017cca9]  File "/Users/eviljimmy/opt/anaconda3/envs/mlops/lib/python3.9/site-packages/metaflow/flowspec.py", line 229, in __getattr__
+[MFLOG|0|2023-04-24T04:40:53.923911Z|runtime|ff47b624-4878-438c-b67f-2d4b1c9a9b6a]    raise AttributeError("Flow %s has no attribute '%s'" % (self.name, name))
+[MFLOG|0|2023-04-24T04:40:53.923952Z|runtime|abb1b6c6-34e4-40ae-96c1-b952eb2fc930]AttributeError: Flow ClassifierTrainFlow has no attribute 'reuslts'
+[MFLOG|0|2023-04-24T04:40:53.923991Z|runtime|f43bf864-370f-4827-a1ba-1e412b164c73]
+[MFLOG|0|2023-04-24T04:40:53.924529Z|runtime|4d03ecb9-5054-4fe3-b972-e87a3393bdd7]Task failed.
